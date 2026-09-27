@@ -6,24 +6,9 @@ import javafx.scene.control.Button;
 
 public class loginPageController {
 
+    public Button btnlogin;
 
-    @FXML
-    private Button btnSubmit;
-
-    @FXML
-    public Button btnsave;
-
-    @FXML
-    void btnSubmitOnAction(ActionEvent event) {
-        System.out.println("Butten clicked..!");
-    }
-
-    public void btnsaveOnAction(ActionEvent actionEvent) {
-        System.out.println("Save Butten Cliked..!");
-    }
-
-    public void btnHomeNavigationOnAction(ActionEvent actionEvent) {
-        System.out.println("Navigation to the Home page...");
-
+    public void btnLoginOnAction(ActionEvent actionEvent) {
+        System.out.println("Login Successfully !");
     }
 }

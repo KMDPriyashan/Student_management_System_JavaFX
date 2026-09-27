@@ -2,21 +2,29 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.loginPageController">
+<AnchorPane prefHeight="315.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.loginPageController">
    <children>
-      <TextField layoutX="155.0" layoutY="93.0" prefHeight="26.0" prefWidth="258.0" />
-      <TextField layoutX="155.0" layoutY="154.0" prefHeight="26.0" prefWidth="258.0" />
-      <Label alignment="CENTER" layoutX="44.0" layoutY="29.0" prefHeight="46.0" prefWidth="296.0" text="Student Form" textAlignment="RIGHT" wrapText="true">
+      <TextField fx:id="txtusername" layoutX="155.0" layoutY="106.0" prefHeight="26.0" prefWidth="258.0" />
+      <Label alignment="CENTER" layoutX="93.0" layoutY="20.0" prefHeight="46.0" prefWidth="296.0" text="Student Form" textAlignment="RIGHT" wrapText="true">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="69.0" layoutY="97.0" prefHeight="18.0" prefWidth="66.0" text="Name" />
-      <Label layoutX="56.0" layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="Address :" />
-      <Button fx:id="btnlogin" layoutX="207.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="154.0" text="Login Now" />
+      <Label fx:id="lblusername" layoutX="56.0" layoutY="110.0" prefHeight="18.0" prefWidth="66.0" text="Username : " />
+      <Label fx:id="lblpassword" layoutX="56.0" layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="password :" />
+      <Button fx:id="btnlogin" layoutX="302.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #55E07E;" text="Login Now" />
+      <ImageView fitHeight="64.0" fitWidth="100.0" layoutX="46.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.jpeg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="155.0" layoutY="154.0" prefHeight="26.0" prefWidth="258.0" />
    </children>
 </AnchorPane>
